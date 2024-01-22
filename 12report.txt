@@ -1,0 +1,14 @@
+Tue Jan 16 10:17:59 PST 2024
+akshatkhandelwal
+/Users/akshatkhandelwal
+/bin/bash
+/Users/akshatkhandelwal/Code/mcb185_homework
+/Users/akshatkhandelwal/anaconda3/bin:/Users/akshatkhandelwal/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+Darwin campus-058-230.ucdavis.edu 21.2.0 Darwin Kernel Version 21.2.0: Sun Nov 28 20:29:10 PST 2021; root:xnu-8019.61.5~1/RELEASE_ARM64_T8101 arm64
+Python 3.10.9
+/Users/akshatkhandelwal/Code
+/Users/akshatkhandelwal/Code/mcb185_homework
+/Users/akshatkhandelwal/Code/mcb185_homework/.git
+/Users/akshatkhandelwal/Code/MCB185
+/Users/akshatkhandelwal/Code/MCB185/.git
+/Users/akshatkhandelwal/Code/MCB185/data
