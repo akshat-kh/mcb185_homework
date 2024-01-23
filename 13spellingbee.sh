@@ -1,2 +1,2 @@
 cd ~/Code/MCB185/data
-gunzip -c dictionary.gz | grep "r" | grep -E "[acinorz]{2,5}[acinorz]" | wc -l
+gunzip -c ~/Code/MCB185/data/dictionary.gz | grep "r" | grep -v "[^acinorz]"| grep -E ".{4}" | wc -l
