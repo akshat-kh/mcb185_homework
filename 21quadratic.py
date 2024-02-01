@@ -2,13 +2,7 @@
 
 import math
 import sys
-
-"""
-Function to implement the quadratic formula
-Coefficients a, b, and c are passed through
-Returns 0,1, or 2 x-intercepts depending on 
-the values
-""" 
+ 
 def quad_formula(a, b, c):
 	d = b**2 - 4 * a * c  # Calculating discriminant value
 	if d < 0:
