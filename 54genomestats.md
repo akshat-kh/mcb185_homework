@@ -16,3 +16,7 @@ C. elegans, and D. melanogaster.
 | D.melanogaster | gene |  108 | 88  | 60436 | 4558 | 9087 | 1765 |
 |                | exon |  648 | 21  | 12094 | 559  | 922  | 287  |
 |                | CDS  |  880 |  4  | 12094 | 490  | 1096 | 214  |
+
+<i>D. melanogaster</i> seems to have been sampled almost 1/3 as much as the other two
+organisms, given by their counts. It also appears to have the longest genomic features, on
+average 
