@@ -51,9 +51,10 @@ def kdh(seq):
 def has_region(seq, aa_num, min_hydro):
 	for i in range(len(seq) - aa_num + 1):
 		pep = seq[i:i+aa_num]
-		if kdh(pep) >= min_hydro and 'P' not in pep:
+		#print(i, pep, kdh(pep))
+		if kdh(pep) >= min_hydro and 'P' not in pep: 
 			return True
-		return False
+	return False
 	
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	s1 = seq[0:30]
