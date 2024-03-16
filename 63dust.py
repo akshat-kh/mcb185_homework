@@ -8,37 +8,28 @@ path = sys.argv[1]
 w = int(sys.argv[2])
 threshold = float(sys.argv[3])
 
-a = 0
-g = 0
-c = 0
-t = 0
-total_nts = 0
-h = 0
 defline = ''
-print('>', end='')
+copy_seq = []
+
 for defline, seq in mcb185.read_fasta(path):
-	print(defline)
+	for nt in seq:
+		copy_seq.append(nt)
+	
 	for i in range(len(seq) - w + 1):
+		h = 0
 		s = seq[i:i+w]
-		if i == 0:
-			a += s.count('A')
-			g += s.count('G')
-			c += s.count('C')
-			t += s.count('T')
-			total_nts += w
-		else:
-			end_nt = s[len(s) - 1]
-			a += end_nt.count('A')
-			g += end_nt.count('G')
-			c += end_nt.count('C')
-			t += end_nt.count('T')
-			total_nts += 1
-		a_prop = a / total_nts
-		c_prop = c / total_nts
-		g_prop = g / total_nts
-		t_prop = t / total_nts
-		h -= (a_prop * math.log2(a_prop)) + (c_prop * math.log2(c_prop)) + (g_prop * math.log2(t_prop)) + (t_prop * math.log2(t_prop))
+		
+		for nt in 'ACGT':
+			p = s.count(nt) / w
+			if p > 0:
+				h -= p * math.log2(p)
+			
 		if h < threshold:
-			for j in range(i, len(s)):
-				seq[j] = 'N'
-		print(seq[i:i+60)
+			for j in range(i, i + w):
+				copy_seq[j] = 'N'
+				
+copy_seq = ''.join(copy_seq)
+print('>', end='')
+print(defline)
+for i in range(0, len(copy_seq), 60):
+	print(copy_seq[i:i+60])
