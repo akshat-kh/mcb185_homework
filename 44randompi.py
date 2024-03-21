@@ -5,11 +5,11 @@ import random
 
 total = 0
 inside = 0
-while 1 == 1:
+while True:
 	total += 1
-	x = random.gauss(0.0, 1.0)
-	y = random.gauss(0.0, 1.0)
+	x = random.random()
+	y = random.random()
 	dist =  math.sqrt(x**2 + y**2)
-	if dist < 1:
+	if dist > 0 and dist <= 1: 
 		inside += 1
-	print(inside / total)
+	print(4 * inside / total)

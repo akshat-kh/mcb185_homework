@@ -25,7 +25,7 @@ print('Normal roll', end='\t')
 print('Adv roll', end='\t')
 print('Disadv roll')
 print('----------------------------------------------------')
-rolls = 20
+rolls = 1000000
 for dc in range(5, 20, 5):
 	print(dc, end='\t')
 	normal_wins = 0

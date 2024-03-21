@@ -3,7 +3,7 @@
 import random
 import math
 
-rolls = 100
+rolls = 1000000
 
 # 3D6 rule
 sum_3d6 = 0
